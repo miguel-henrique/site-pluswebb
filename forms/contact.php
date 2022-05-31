@@ -6,6 +6,7 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
+$email_subject = $_POST['subject']
 $message = $_POST['message'];
 
 //Validate first
@@ -22,7 +23,7 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = 'miguel@pluswebb.com';//<== update the email address
-$email_subject = "New Form submission";
+$email_subject = $email_subject;
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
     
