@@ -1418,7 +1418,8 @@ Observe que a mala direta tem uma proporção de 100 para 1 quando comparada com
           </div>
 
           <div class="col-lg-8">
-            <form action="https://script.google.com/macros/s/AKfycbx8PqTUtbWCIm7TmLOSFoolYYWxfCC7G45SwIymbkQXCtEToOJJ9Qd0pFXbcaAmCE3vJA/exec" method="post" role="form" class="php-email-form">
+            <!-- <form action="https://script.google.com/macros/s/AKfycbznTC8ROd5Iwb6ypMXn8KC81F5SyBEFGaBxIWElNA/exec" method="GET" role="form" class="php-email-form"> -->
+              <form id="form" class="php-email-form"></form>
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1438,7 +1439,7 @@ Observe que a mala direta tem uma proporção de 100 para 1 quando comparada com
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" id="submit">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -1523,6 +1524,26 @@ Observe que a mala direta tem uma proporção de 100 para 1 quando comparada com
 
       </div>
     </div>
+
+
+
+
+    <script>
+      var $form = $('form#form'),
+    url = 'https://script.google.com/macros/s/AKfycby3VNcrtkneH5hlsbPTMLYRqXS_paQYXFcF3LCZuYaJ0eXjgxcG/exec'
+
+$('#submit').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+    </script>
 
   </footer><!-- End Footer -->
 
