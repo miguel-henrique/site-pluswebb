@@ -6,7 +6,7 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
-$email_subject = $_POST['subject']
+$email_subject = $_POST['subject'];
 $message = $_POST['message'];
 
 //Validate first
