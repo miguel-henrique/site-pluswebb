@@ -573,6 +573,9 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="https://reeciclar.com.br/wp-content/uploads/2021/03/logo-com-slogan-sem-fundo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://kife.com.br/wp-content/uploads/logo-11.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="https://i9.marketing/wp-content/uploads/2021/11/logo_transparente-1-768x768.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="https://cursomaislucro.com.br/wp-content/uploads/2021/06/LOGO-MAIS-LUCRO.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="https://www.gloriasucatas.com/assets/images/logo-glória-sucatas.jpg" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="https://planosassessoria.com.br/site/wp-content/uploads/2021/10/logo-800.f2287663-768x318.webp" class="img-fluid" alt=""></div>
@@ -1418,33 +1421,39 @@ Observe que a mala direta tem uma proporção de 100 para 1 quando comparada com
           </div>
 
           <div class="col-lg-8">
-            <form method="post" action="https://api.sheetmonkey.io/form/95zJT6trYLdHyBkK3gHttZ"  class="php-email-form">
+            <!-- <form action="https://formspree.io/f/mayaqqda" class="php-email-form" method="POST" name="form"> -->
+              <form action="https://api.sheetmonkey.io/form/95zJT6trYLdHyBkK3gHttZ" class="php-email-form" method="post" name="form">
+           <!--  <form action="contato.php" class="php-email-form" method="post" name="form"> -->
+            <!-- <form method="post" action="https://api.sheetmonkey.io/form/95zJT6trYLdHyBkK3gHttZ"  class="php-email-form"> -->
              <!--  <form id="form1" role="form" class="php-email-form"></form> -->
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="Assunto" id="subject" placeholder="Subject" required>
               </div>
-
 
               <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="Mensagem" placeholder="Message" required></textarea>
               </div>
+              <div class="g-recaptcha" data-sitekey="6LcMbvogAAAAAJWiZSpPTybObJ-GeyeFjdDMQ6fK"></div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" id="submit">Send Message</button></div>
+              <div class="text-center">
+                <button type="submit" name="submit" value="submit">Send Message</button>
+              </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
+          <!-- End Contact Form -->
 
         </div>
 
@@ -1564,6 +1573,9 @@ $('#submit').on('click', function(e) {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<!-- recaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 
