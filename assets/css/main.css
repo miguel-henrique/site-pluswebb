@@ -2378,6 +2378,17 @@ section {
   margin-bottom: 0;
 }
 
+.blog .blog-details .content .blog-video{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Blog Sidebar
 --------------------------------------------------------------*/
