@@ -1725,6 +1725,14 @@ section {
   box-shadow: none;
 }
 
+.faq .img-faq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
